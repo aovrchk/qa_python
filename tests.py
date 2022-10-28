@@ -20,7 +20,7 @@ class TestBooksCollector:
         # словарь books_rating, который нам возвращает метод get_books_rating, имеет длину 2
         assert len(collector.get_books_rating()) == 2
 
-    #add_new_book Проверяем, что книге присваивается рейтинг 1
+    #add_new_book Проверка присвоения книге рейтинга 1 по-умолчанию при добавлении новой книги в словарь books_rating
     def test_add_new_book_will_set_rating_one_for_book(self):
         #Создать экземпляр класса BooksCollector
         collector = BooksCollector()
